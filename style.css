@@ -7,7 +7,6 @@
 header {
     padding: 4em;
     color: white;
-    /* background-color: #3d3dff; */
     background: linear-gradient(to right, #2727aa, #3d3dff, #2727aa);
     height: 15vh;
     display: flex;
@@ -51,23 +50,21 @@ div.stopka img:hover {
 /* glowne ustawienia ^ */
 
 section {
-    /* width: 100%; */
-    /* overflow: auto; */
-    background: linear-gradient(to right, #6e6e6e, #e0e0e0, #6e6e6e);
+    background: linear-gradient(to top right, #6e6e6e, #e0e0e0, #6e6e6e);
     padding: 1.5em;
 }
 
 div.aplikacja {
     height: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.7em;
 }
 
 div.blok {
     height: 40vh;
     min-height: 300px;
-    background-color: #b0b0b0;
+    background: linear-gradient(to top left, #b0b0b0, #888);
     border: 2px solid gray;
     border-radius: 4px;
     display: flex;
@@ -81,7 +78,8 @@ div.animacja_blok {
     height: 80%;
     width: 95%;
     margin: 0.5em 1em;
-    background-color: #777;
+    background: linear-gradient(to top right, #555, #777);
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +106,7 @@ div.options img {
 
 @media screen and (max-width: 1000px) {
     div.aplikacja {
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -167,13 +165,20 @@ div.objectAnim1_1:nth-child(4) {
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
-@keyframes anim1_1_1 {
+@keyframes anim1_1_1 { 
     0%   {left:0px; top:0px;}
     25%  {left:64px; top:0px; rotate: 90deg;}
     50%  {left:64px; top:64px; rotate: 180deg;}
     75%  {left:0px; top:64px; rotate: 270deg;}
     100% {left:0px; top:0px; rotate: 360deg;}
 }
+/* @keyframes anim1_1_1 {
+    0%   {left:0px; top:0px;}
+    25%  {left:64px; top:0px; rotate: 180deg;}
+    50%  {left:64px; top:64px; rotate: 360deg;}
+    75%  {left:0px; top:64px; rotate: 540deg;}
+    100% {left:0px; top:0px; rotate: 720deg;}
+} */
 
 .animacja1 div.objectAnim1_1:nth-child(2) {
     animation-name: anim1_1_2;
