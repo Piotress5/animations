@@ -1,0 +1,177 @@
+/* =================== animacja 1 ====================== */
+div.obiekty1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    gap: 20px;
+}
+
+div.obiekty1 div {
+    width: 44px;
+    height: 44px;
+    background-color: red;
+    border: double 6px red;
+    background-clip: padding-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.objectAnim1_1:nth-child(2) {
+    background-color: yellow;
+    border: double 6px yellow;
+}
+
+div.objectAnim1_1:nth-child(3) {
+    background-color: lawngreen;
+    border: double 6px lawngreen;
+}
+
+div.objectAnim1_1:nth-child(4) {
+    background-color: blue;
+    border: double 6px blue;
+}
+
+.animacja1 div.objectAnim1_1:nth-child(1) {
+    animation: anim1_1_1 3s infinite;
+    animation-play-state: paused;
+}
+@keyframes anim1_1_1 { 
+    0%   {left:0px; top:0px;}
+    25%  {left:64px; top:0px; rotate: 90deg;}
+    50%  {left:64px; top:64px; rotate: 180deg;}
+    75%  {left:0px; top:64px; rotate: 270deg;}
+    100% {left:0px; top:0px; rotate: 360deg;}
+}
+/* @keyframes anim1_1_1 {
+    0%   {left:0px; top:0px;}
+    25%  {left:64px; top:0px; rotate: 180deg;}
+    50%  {left:64px; top:64px; rotate: 360deg;}
+    75%  {left:0px; top:64px; rotate: 540deg;}
+    100% {left:0px; top:0px; rotate: 720deg;}
+} */
+
+.animacja1 div.objectAnim1_1:nth-child(2) {
+    animation: anim1_1_2 3s infinite;
+    animation-play-state: paused;
+}
+@keyframes anim1_1_2 {
+    0%   {right:0px; top:0px; }
+    25%  {right:0px; top:64px; rotate: 90deg;}
+    50%  {right:64px; top:64px; rotate: 180deg;}
+    75%  {right:64px; top:0px; rotate: 270deg;}
+    100% {right:0px; top:0px; rotate: 360deg;}
+}
+
+.animacja1 div.objectAnim1_1:nth-child(3) {
+    animation: anim1_1_3 3s infinite;
+    animation-play-state: paused;
+}
+@keyframes anim1_1_3 {
+    0%   {left:0px; bottom:0px;}
+    25%  {left:0px; bottom:64px; rotate: 90deg;}
+    50%  {left:64px; bottom:64px; rotate: 180deg;}
+    75%  {left:64px; bottom:0px; rotate: 270deg;}
+    100% {left:0px; bottom:0px; rotate: 360deg;}
+}
+
+.animacja1 div.objectAnim1_1:nth-child(4) {
+    animation: anim1_1_4 3s infinite;
+    animation-play-state: paused;
+}
+@keyframes anim1_1_4 {
+    0%   {right:0px; bottom:0px;}
+    25%  {right:64px; bottom:0px; rotate: 90deg;}
+    50%  {right:64px; bottom:64px; rotate: 180deg;}
+    75%  {right:0px; bottom:64px; rotate: 270deg;}
+    100% {right:0px; bottom:0px; rotate: 360deg;}
+}
+
+/* =================== animacja 2 ====================== */
+div.obiekty2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+div.obiekty2 div {
+    width: 100px;
+    height: 100px;
+    border: 12px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.animacja2 div:nth-child(1) {
+    background: conic-gradient(yellow 0deg, yellow 45deg,
+                transparent 45deg, transparent 180deg) border-box;
+    animation: anim2_1_1 3s infinite linear;
+    animation-play-state: paused;
+    z-index: 4;
+}
+
+div.animacja2 div:nth-child(2) {
+    background: conic-gradient(red 0deg, red 60deg,
+                transparent 60deg, transparent 180deg) border-box;
+                transform: translate(-50%, -50%) rotate(360deg);
+    animation: anim2_1_2 5s infinite linear;
+    animation-play-state: paused;
+    z-index: 3;
+}
+
+div.animacja2 div:nth-child(3) {
+    background: conic-gradient(blue 0deg, blue 75deg,
+                transparent 75deg, transparent 180deg) border-box;
+    animation: anim2_1_3 6s infinite linear;
+    animation-play-state: paused;
+    z-index: 2;
+}
+
+div.animacja2 div:nth-child(4) {
+    background: conic-gradient(lawngreen 0deg, lawngreen 100deg,
+                transparent 100deg, transparent 180deg) border-box;
+    animation: anim2_1_4 8s infinite linear;
+    animation-play-state: paused;
+    z-index: 1;
+}
+
+
+
+div.animacja2 div:nth-child(5) {
+    background: linear-gradient(to top right, #777, #aaa) padding-box,
+    conic-gradient(transparent 0deg, transparent 180deg) border-box;
+    animation: anim2_1_5 8s infinite linear;
+    animation-play-state: paused;
+    z-index: 5;
+}
+
+@keyframes anim2_1_1 {
+    0% {transform: translate(-50%, -50%) rotate(360deg);} 
+    100% {transform: translate(-50%, -50%) rotate(-360deg);} 
+}
+
+@keyframes anim2_1_2 {
+    0% {transform: translate(-50%, -50%) rotate(-360deg);} 
+    100% {transform: translate(-50%, -50%) rotate(360deg);} 
+}
+
+@keyframes anim2_1_3 {
+    0% {transform: translate(-50%, -50%) rotate(360deg);} 
+    75% {transform: translate(-50%, -50%) rotate(-180deg);}
+    100% {transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+@keyframes anim2_1_4 {
+    0% {transform: translate(-50%, -50%) rotate(-360deg);} 
+    100% {transform: translate(-50%, -50%) rotate(360deg);} 
+}
+
+@keyframes anim2_1_5 {
+    0% {transform: translate(-50%, -50%) rotate(-360deg);} 
+    100% {transform: translate(-50%, -50%) rotate(360deg);} 
+}
