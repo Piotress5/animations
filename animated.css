@@ -1,4 +1,4 @@
-/* =================== animacja 1 ====================== */
+/* =================== blok 1 ====================== */
 div.obiekty1 {
     display: grid;
     grid-template-columns: auto auto;
@@ -32,7 +32,7 @@ div.objectAnim1_1:nth-child(4) {
     background-color: blue;
     border: double 6px blue;
 }
-
+/* ========= animacja 1 ========= */
 .animacja1 div.objectAnim1_1:nth-child(1) {
     animation: anim1_1_1 3s infinite;
     animation-play-state: paused;
@@ -87,8 +87,72 @@ div.objectAnim1_1:nth-child(4) {
     75%  {right:0px; bottom:64px; rotate: 270deg;}
     100% {right:0px; bottom:0px; rotate: 360deg;}
 }
+/* ========= animacja 2 ========= */
+/* .animacja1 div.objectAnim1_1:nth-child(1) {
+    animation: anim1_2_1 3s infinite linear;
+    animation-play-state: paused;
+} */
+@keyframes anim1_2_1 { 
+    0%   {left:0px; top:0px; scale: 1; z-index: 4;}
+    13%  {left:32px; top:32px; scale: 1.5; z-index: 4;}
+    25%  {left:64px; top:64px; scale: 1; z-index: 4;}
+    37%  {left:64px; top:64px; scale: 1; z-index: 1;}
+    50%  {left:64px; top:64px; scale: 1; z-index: 1;}
+    62%  {left:32px; top:32px; scale: 0.5; z-index: 1;}
+    75%  {left:0px; top:0px; scale: 1; z-index: 1;}
+    87%  {left:0px; top:0px; scale: 1; z-index: 1;}
+    100% {left:0px; top:0px; scale: 1; z-index: 1;}
+}
 
-/* =================== animacja 2 ====================== */
+/* .animacja1 div.objectAnim1_1:nth-child(2) {
+    animation: anim1_2_2 3s infinite linear;
+    animation-play-state: paused;
+} */
+@keyframes anim1_2_2 {
+    0%   {right:0px; top:0px; scale: 1; z-index: 1;}
+    13%  {right:0px; top:0px; scale: 1; z-index: 1;}
+    25%  {right:0px; top:0px; scale: 1; z-index: 4;}
+    37%  {right:32px; top:32px; scale: 1.5; z-index: 4;}
+    50%  {right:64px; top:64px; scale: 1; z-index: 4;}
+    62%  {right:64px; top:64px; scale: 1; z-index: 1;}
+    75%  {right:64px; top:64px; scale: 1; z-index: 1;}
+    87%  {right:32px; top:32px; scale: 0.5; z-index: 1;}
+    100% {right:0px; top:0px; scale: 1; z-index: 1;}
+}
+
+/* .animacja1 div.objectAnim1_1:nth-child(3) {
+    animation: anim1_2_3 3s infinite linear;
+    animation-play-state: paused;
+} */
+@keyframes anim1_2_3 {
+    0%   {left:0px; bottom:0px; scale: 1; z-index: 1;}
+    13%  {left:0px; bottom:0px; scale: 1; z-index: 1;}
+    25%  {left:0px; bottom:0px; scale: 1; z-index: 1;}
+    37%  {left:32px; bottom:32px; scale: 0.5; z-index: 1;}
+    50%  {left:64px; bottom:64px; scale: 1; z-index: 1;}
+    62%  {left:64px; bottom:64px; scale: 1; z-index: 1;}
+    75%  {left:64px; bottom:64px; scale: 1; z-index: 4;}
+    87%  {left:32px; bottom:32px; scale: 1.5; z-index: 4;}
+    100% {left:0px; bottom:0px; scale: 1; z-index: 4;}
+}
+
+/* .animacja1 div.objectAnim1_1:nth-child(4) {
+    animation: anim1_2_4 3s infinite linear;
+    animation-play-state: paused;
+} */
+@keyframes anim1_2_4 {
+    0%   {right:0px; bottom:0px; scale: 1; z-index: 1;}
+    13%  {right:32px; bottom:32px; scale: 0.5; z-index: 1;}
+    25%  {right:64px; bottom:64px; scale: 1; z-index: 1;}
+    37%  {right:64px; bottom:64px; scale: 1; z-index: 1;}
+    50%  {right:64px; bottom:64px; scale: 1; z-index: 1;}
+    62%  {right:32px; bottom:32px; scale: 1.5; z-index: 4;}
+    75%  {right:0px; bottom:0px; scale: 1; z-index: 4;}
+    87%  {right:0px; bottom:0px; scale: 1; z-index: 1;}
+    100% {right:0px; bottom:0px; scale: 1; z-index: 1;}
+}
+
+/* =================== blok 2 ====================== */
 div.obiekty2 {
     display: flex;
     justify-content: center;
@@ -139,8 +203,6 @@ div.animacja2 div:nth-child(4) {
     animation-play-state: paused;
     z-index: 1;
 }
-
-
 
 div.animacja2 div:nth-child(5) {
     background: linear-gradient(to top right, #777, #aaa) padding-box,
