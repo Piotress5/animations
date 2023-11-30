@@ -113,7 +113,7 @@ next.forEach(function(z) {
         wartosc = z.getAttribute("value");
         tempvalue = wartosc - 1;
         if (wartosc == 1) {
-            if (licznik1 < 3) {
+            if (licznik1 < 4) {
                 licznik1++;
             } else {
                 licznik1 = 1;
@@ -150,7 +150,7 @@ next.forEach(function(z) {
             animacja_nr[tempvalue].innerText = licznik2;
         } // obiekt2
         if (wartosc == 3) {
-            if (licznik3 < 3) {
+            if (licznik3 < 5) {
                 licznik3++;
             } else {
                 licznik3 = 1;
@@ -159,9 +159,13 @@ next.forEach(function(z) {
                 obiekty3[i].style.animationName = "anim" + wartosc + "_"
                 + licznik3 + "_" + (i + 1);
             }
-            if (licznik3 == 3) {
+            if (licznik3 == 3 || licznik3 == 4) {
                 for (var i = 0, max = obiekty3.length; i < max; i++) {
                     obiekty3[i].style.animationDuration = "3s";
+                }
+            } else if (licznik3 == 5) {
+                for (var i = 0, max = obiekty3.length; i < max; i++) {
+                    obiekty3[i].style.animationDuration = "5s";
                 }
             } else {
                 for (var i = 0, max = obiekty3.length; i < max; i++) {
@@ -172,11 +176,3 @@ next.forEach(function(z) {
         } // obiekt3
     }
 });
-// transform: rotate(270deg) translate(50px) rotate(-270deg);
-// transform: rotate(315deg) translate(50px) rotate(-315deg);
-// transform: rotate(0deg) translate(50px) rotate(0deg);
-// transform: rotate(45deg) translate(50px) rotate(-45deg);
-// transform: rotate(90deg) translate(50px) rotate(-90deg);
-// transform: rotate(135deg) translate(50px) rotate(-135deg);
-// transform: rotate(180deg) translate(50px) rotate(-180deg);
-// transform: rotate(225deg) translate(50px) rotate(-225deg);

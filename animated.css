@@ -176,6 +176,38 @@ div.objectAnim1_1:nth-child(4) {
     75%  {right:0px; bottom:64px; rotate: 540deg;}
     100% {right:0px; bottom:0px; rotate: 720deg;}
 }
+/* ========= animacja 4 ========= */
+@keyframes anim1_4_1 { 
+    0%   {left:0px; top:0px; transform: rotate3d(0, 0, 0, 0deg);}
+    25%  {left:64px; top:0px; transform: rotate3d(0, 1, 0, 180deg);}
+    50%  {left:64px; top:64px; transform: rotate3d(0, 0, 1, 180deg);}
+    75%  {left:0px; top:64px; transform: rotate3d(1, 0, 0, 180deg);}
+    100% {left:0px; top:0px; transform: rotate3d(0, 0, 0, 0deg);}
+}
+
+@keyframes anim1_4_2 { 
+    0%   {right:0px; top:0px; transform: rotate3d(0, 0, 0, 0deg);}
+    25%  {right:0px; top:64px; transform: rotate3d(1, 0, 0, 180deg);}
+    50%  {right:64px; top:64px; transform: rotate3d(0, 0, 1, 180deg);}
+    75%  {right:64px; top:0px; transform: rotate3d(0, 1, 0, 180deg);}
+    100% {right:0px; top:0px; transform: rotate3d(0, 0, 0, 0deg);}
+}
+
+@keyframes anim1_4_3 { 
+    0%   {left:0px; bottom:0px; transform: rotate3d(0, 0, 0, 0deg);}
+    25%  {left:0px; bottom:64px; transform: rotate3d(1, 0, 0, 180deg);}
+    50%  {left:64px; bottom:64px; transform: rotate3d(0, 0, 1, 180deg);}
+    75%  {left:64px; bottom:0px; transform: rotate3d(0, 1, 0, 180deg);}
+    100% {left:0px; bottom:0px; transform: rotate3d(0, 0, 0, 0deg);}
+}
+
+@keyframes anim1_4_4 { 
+    0%   {right:0px; bottom:0px; transform: rotate3d(0, 0, 0, 0deg);}
+    25%  {right:64px; bottom:0px; transform: rotate3d(0, 1, 0, 180deg);}
+    50%  {right:64px; bottom:64px; transform: rotate3d(0, 0, 1, 180deg);}
+    75%  {right:0px; bottom:64px; transform: rotate3d(1, 0, 0, 180deg);}
+    100% {right:0px; bottom:0px; transform: rotate3d(0, 0, 0, 0deg);}
+}
 
 /* =================== blok 2 ====================== */
 div.obiekty2 {
@@ -503,12 +535,10 @@ div.animacja3 div:nth-child(8) {
     100% {transform: rotate(225deg) translate(50px) rotate(-225deg);} 
 }
 /* ========= animacja 3 ========= */
-/* @keyframes anim3_3_1 {
+@keyframes anim3_3_1 {
     0% {background-color: white; border: 2px solid white;} 
-    6.25% {background-color: white; border: 2px solid white;}
-    12.5% {background-color: white; border: 2px solid white;}
     87.5% {background-color: black; border: 2px solid black;} 
-    93.75% {background-color: black; border: 2px solid black;} 
+    93.75% {background-color: rgb(88, 88, 88); border: 2px solid rgb(88, 88, 88);} 
     100% {background-color: white; border: 2px solid white;} 
 }
 @keyframes anim3_3_2 {
@@ -554,102 +584,170 @@ div.animacja3 div:nth-child(8) {
     100% {background-color: black; border: 2px solid black;} 
 }
 @keyframes anim3_3_8 {
-    0% {background-color: white; border: 2px solid white;}
-    6.25% {background-color: black; border: 2px solid black;}
+    0% {background-color: black; border: 2px solid black;}
     87.5% {background-color: white; border: 2px solid white;} 
     93.75% {background-color: white; border: 2px solid white;}
-    100% {background-color: white; border: 2px solid white;} 
-} */
-@keyframes anim3_3_1 {
-    0% {background-color: white; border: 2px solid white;} 
-    12.5% {background-color: white; border: 2px solid white;
+    100% {background-color: rgb(88, 88, 88); border: 2px solid rgb(88, 88, 88);} 
+}
+/* ========= animacja 4 ========= */
+@keyframes anim3_4_1 {
+    0% {background-color: white; border: 2px solid white;
     transform: rotate(270deg) translate(50px) rotate(-270deg);}
+    12.5% {background-color: white; border: 2px solid white;
+    transform: rotate(315deg) translate(50px) rotate(-270deg);}
+    25% {background-color: black; border: 2px solid black;
+    transform: rotate(360deg) translate(0px) rotate(-270deg);}
+    37.5% {background-color: white; border: 2px solid white;
+    transform: rotate(405deg) translate(50px) rotate(-270deg);}
+    100% {background-color: white; border: 2px solid white;
+    transform: rotate(630deg) translate(50px) rotate(-270deg);} 
+}
+@keyframes anim3_4_2 {
+    0% {background-color: white; border: 2px solid white;
+    transform: rotate(315deg) translate(50px) rotate(-315deg);}
+    62.5% {background-color: white; border: 2px solid white;
+    transform: rotate(540deg) translate(50px) rotate(-315deg);}
+    75% {background-color: black; border: 2px solid black;
+    transform: rotate(585deg) translate(0px) rotate(-315deg);}
+    87.5% {background-color: white; border: 2px solid white;
+    transform: rotate(630deg) translate(50px) rotate(-315deg);}
+    100% {background-color: white; border: 2px solid white;
+    transform: rotate(675deg) translate(50px) rotate(-315deg);} 
+}
+@keyframes anim3_4_3 {
+    0% {background-color: white; border: 2px solid white;
+    transform: rotate(0deg) translate(50px) rotate(0deg);}
+    12.5% {background-color: white; border: 2px solid white;
+    transform: rotate(45deg) translate(50px) rotate(0deg);}
+    25% {background-color: black; border: 2px solid black;
+    transform: rotate(90deg) translate(0px) rotate(0deg);}
+    37.5% {background-color: white; border: 2px solid white;
+    transform: rotate(135deg) translate(50px) rotate(0deg);}
+    100% {background-color: white; border: 2px solid white;
+    transform: rotate(360deg) translate(50px) rotate(0deg);} 
+}
+@keyframes anim3_4_4 {
+    0% {background-color: white; border: 2px solid white;
+    transform: rotate(45deg) translate(50px) rotate(-225deg);}
+    62.5% {background-color: white; border: 2px solid white;
+    transform: rotate(270deg) translate(50px) rotate(-225deg);}
+    75% {background-color: black; border: 2px solid black;
+    transform: rotate(315deg) translate(0px) rotate(-225deg);}
+    87.5% {background-color: white; border: 2px solid white;
+    transform: rotate(360deg) translate(50px) rotate(-225deg);}
+    100% {background-color: white; border: 2px solid white;
+    transform: rotate(405deg) translate(50px) rotate(-225deg);} 
+} 
+@keyframes anim3_4_5 {
+    0% {background-color: white; border: 2px solid white;
+    transform: rotate(90deg) translate(50px) rotate(-270deg);}
+    12.5% {background-color: white; border: 2px solid white;
+    transform: rotate(135deg) translate(50px) rotate(-270deg);}
+    25% {background-color: black; border: 2px solid black;
+    transform: rotate(180deg) translate(0px) rotate(-270deg);}
+    37.5% {background-color: white; border: 2px solid white;
+    transform: rotate(225deg) translate(50px) rotate(-270deg);}
+    100% {background-color: white; border: 2px solid white;
+    transform: rotate(450deg) translate(50px) rotate(-270deg);} 
+}
+@keyframes anim3_4_6 {
+    0% {background-color: white; border: 2px solid white;
+    transform: rotate(135deg) translate(50px) rotate(-135deg);}
+    62.5% {background-color: white; border: 2px solid white;
+    transform: rotate(360deg) translate(50px) rotate(-135deg);}
+    75% {background-color: black; border: 2px solid black;
+    transform: rotate(405deg) translate(0px) rotate(-135deg);}
+    87.5% {background-color: white; border: 2px solid white;
+    transform: rotate(450deg) translate(50px) rotate(-135deg);}
+    100% {background-color: white; border: 2px solid white;
+    transform: rotate(495deg) translate(50px) rotate(-135deg);} 
+} 
+@keyframes anim3_4_7 {
+    0% {background-color: white; border: 2px solid white;
+    transform: rotate(180deg) translate(50px) rotate(-270deg);}
+    12.5% {background-color: white; border: 2px solid white;
+    transform: rotate(225deg) translate(50px) rotate(-270deg);}
     25% {background-color: black; border: 2px solid black;
     transform: rotate(270deg) translate(0px) rotate(-270deg);}
     37.5% {background-color: white; border: 2px solid white;
-    transform: rotate(270deg) translate(50px) rotate(-270deg);}
-    100% {background-color: white; border: 2px solid white;} 
-}
-@keyframes anim3_3_2 {
-    0% {background-color: white; border: 2px solid white;}
-    62.5% {background-color: white; border: 2px solid white;
-    transform: rotate(315deg) translate(50px) rotate(-315deg);}
-    75% {background-color: black; border: 2px solid black;
-    transform: rotate(315deg) translate(0px) rotate(-315deg);}
-    87.5% {background-color: white; border: 2px solid white;
-    transform: rotate(315deg) translate(50px) rotate(-315deg);}
-    100% {background-color: white; border: 2px solid white;} 
-}
-@keyframes anim3_3_3 {
-    0% {background-color: white; border: 2px solid white;} 
-    12.5% {background-color: white; border: 2px solid white;
-    transform: rotate(0deg) translate(50px) rotate(0deg);}
-    25% {background-color: black; border: 2px solid black;
-    transform: rotate(0deg) translate(0px) rotate(0deg);}
-    37.5% {background-color: white; border: 2px solid white;
-    transform: rotate(0deg) translate(50px) rotate(0deg);}
-    100% {background-color: white; border: 2px solid white;} 
-}
-@keyframes anim3_3_4 {
-    0% {background-color: white; border: 2px solid white;}
-    62.5% {background-color: white; border: 2px solid white;
-    transform: rotate(45deg) translate(50px) rotate(-45deg);}
-    75% {background-color: black; border: 2px solid black;
-    transform: rotate(45deg) translate(0px) rotate(-45deg);}
-    87.5% {background-color: white; border: 2px solid white;
-    transform: rotate(45deg) translate(50px) rotate(-45deg);}
-    100% {background-color: white; border: 2px solid white;} 
-}
-@keyframes anim3_3_5 {
-    0% {background-color: white; border: 2px solid white;} 
-    12.5% {background-color: white; border: 2px solid white;
-    transform: rotate(90deg) translate(50px) rotate(-90deg);}
-    25% {background-color: black; border: 2px solid black;
-    transform: rotate(90deg) translate(0px) rotate(-90deg);}
-    37.5% {background-color: white; border: 2px solid white;
-    transform: rotate(90deg) translate(50px) rotate(-90deg);}
-    100% {background-color: white; border: 2px solid white;} 
-}
-@keyframes anim3_3_6 {
-    0% {background-color: white; border: 2px solid white;}
-    62.5% {background-color: white; border: 2px solid white;
-    transform: rotate(135deg) translate(50px) rotate(-135deg);}
-    75% {background-color: black; border: 2px solid black;
-    transform: rotate(135deg) translate(0px) rotate(-135deg);}
-    87.5% {background-color: white; border: 2px solid white;
-    transform: rotate(135deg) translate(50px) rotate(-135deg);}
-    100% {background-color: white; border: 2px solid white;} 
-}
-@keyframes anim3_3_7 {
-    0% {background-color: white; border: 2px solid white;} 
-    12.5% {background-color: white; border: 2px solid white;
-    transform: rotate(180deg) translate(50px) rotate(-180deg);}
-    25% {background-color: black; border: 2px solid black;
-    transform: rotate(180deg) translate(0px) rotate(-180deg);}
-    37.5% {background-color: white; border: 2px solid white;
-    transform: rotate(180deg) translate(50px) rotate(-180deg);}
-    100% {background-color: white; border: 2px solid white;} 
-}
-@keyframes anim3_3_8 {
-    0% {background-color: white; border: 2px solid white;}
-    62.5% {background-color: white; border: 2px solid white;
-    transform: rotate(225deg) translate(50px) rotate(-225deg);}
-    75% {background-color: black; border: 2px solid black;
-    transform: rotate(225deg) translate(0px) rotate(-225deg);}
-    87.5% {background-color: white; border: 2px solid white;
-    transform: rotate(225deg) translate(50px) rotate(-225deg);}
-    100% {background-color: white; border: 2px solid white;} 
-}
-/* @keyframes anim3_3_8 {
-    0% {background-color: white; border: 2px solid white;
-    transform: rotate(0deg) translate(50px) rotate(-225deg);}
-    62.5% {background-color: white; border: 2px solid white;
-    transform: rotate(225deg) translate(50px) rotate(-225deg);}
-    75% {background-color: black; border: 2px solid black;
-    transform: rotate(270deg) translate(0px) rotate(-225deg);}
-    87.5% {background-color: white; border: 2px solid white;
-    transform: rotate(315deg) translate(50px) rotate(-225deg);}
+    transform: rotate(315deg) translate(50px) rotate(-270deg);}
     100% {background-color: white; border: 2px solid white;
-    transform: rotate(360deg) translate(50px) rotate(-225deg);} 
-} */
-/* ========= animacja 4 ========= */
+    transform: rotate(540deg) translate(50px) rotate(-270deg);} 
+}
+@keyframes anim3_4_8 {
+    0% {background-color: white; border: 2px solid white;
+    transform: rotate(225deg) translate(50px) rotate(-225deg);}
+    62.5% {background-color: white; border: 2px solid white;
+    transform: rotate(450deg) translate(50px) rotate(-225deg);}
+    75% {background-color: black; border: 2px solid black;
+    transform: rotate(495deg) translate(0px) rotate(-225deg);}
+    87.5% {background-color: white; border: 2px solid white;
+    transform: rotate(540deg) translate(50px) rotate(-225deg);}
+    100% {background-color: white; border: 2px solid white;
+    transform: rotate(585deg) translate(50px) rotate(-225deg);} 
+} 
+/* ========= animacja 5 ========= */
+@keyframes anim3_5_1 {
+    0% {background-color: white; border: 2px solid white;
+    transform: rotate(270deg) translate(50px) rotate(-270deg);}
+    6.25% {background-color: white; border: 2px solid white;
+    transform: rotate(315deg) translate(50px) rotate(-270deg);}
+    100% {background-color: white; border: 2px solid white;
+    transform: rotate(990deg) translate(50px) rotate(-270deg);} 
+}
+@keyframes anim3_5_2 {
+    0% {background-color: white; border: 2px solid white;}
+    6.25% {background-color: white; border: 2px solid white;}
+    6.26% {background-color: transparent; border: 2px solid transparent;}
+    56.25% {background-color: transparent; border: 2px solid transparent;}
+    56.26% {background-color: white; border: 2px solid white;}
+    100% {background-color: white; border: 2px solid white;} 
+}
+@keyframes anim3_5_3 {
+    0% {background-color: white; border: 2px solid white;}
+    12.5% {background-color: white; border: 2px solid white;}
+    12.6% {background-color: transparent; border: 2px solid transparent;}
+    62.5% {background-color: transparent; border: 2px solid transparent;}
+    62.6% {background-color: white; border: 2px solid white;}
+    100% {background-color: white; border: 2px solid white;} 
+}
+@keyframes anim3_5_4 {
+    0% {background-color: white; border: 2px solid white;}
+    18.75% {background-color: white; border: 2px solid white;}
+    18.76% {background-color: transparent; border: 2px solid transparent;}
+    68.75% {background-color: transparent; border: 2px solid transparent;}
+    68.76% {background-color: white; border: 2px solid white;}
+    100% {background-color: white; border: 2px solid white;} 
+} 
+@keyframes anim3_5_5 {
+    0% {background-color: white; border: 2px solid white;}
+    25% {background-color: white; border: 2px solid white;}
+    25.1% {background-color: transparent; border: 2px solid transparent;}
+    75% {background-color: transparent; border: 2px solid transparent;}
+    75.1% {background-color: white; border: 2px solid white;}
+    100% {background-color: white; border: 2px solid white;} 
+} 
+@keyframes anim3_5_6 {
+    0% {background-color: white; border: 2px solid white;}
+    31.25% {background-color: white; border: 2px solid white;}
+    31.26% {background-color: transparent; border: 2px solid transparent;}
+    81.25% {background-color: transparent; border: 2px solid transparent;}
+    81.26% {background-color: white; border: 2px solid white;}
+    100% {background-color: white; border: 2px solid white;} 
+} 
+@keyframes anim3_5_7 {
+    0% {background-color: white; border: 2px solid white;}
+    37.5% {background-color: white; border: 2px solid white;}
+    37.6% {background-color: transparent; border: 2px solid transparent;}
+    87.5% {background-color: transparent; border: 2px solid transparent;}
+    87.6% {background-color: white; border: 2px solid white;}
+    100% {background-color: white; border: 2px solid white;} 
+} 
+@keyframes anim3_5_8 {
+    0% {background-color: white; border: 2px solid white;}
+    43.75% {background-color: white; border: 2px solid white;}
+    43.76% {background-color: transparent; border: 2px solid transparent;}
+    93.75% {background-color: transparent; border: 2px solid transparent;}
+    93.76% {background-color: white; border: 2px solid white;}
+    100% {background-color: white; border: 2px solid white;} 
+} 
