@@ -6,6 +6,7 @@ const obiekty1 = document.querySelectorAll("div.obiekty1 div");
 const obiekty2 = document.querySelectorAll("div.obiekty2 div");
 const obiekty2_czasy = ["3s", "5s", "6s", "8s", "8s"];
 const obiekty3 = document.querySelectorAll("div.obiekty3 div");
+const obiekty4 = document.querySelectorAll("div.obiekty4 div");
 const animacja_nr = document.querySelectorAll("p.animacja_numer");
 let tempspace = "";
 let tempvalue = 0;
@@ -75,6 +76,23 @@ play.forEach(function(x) {
                 }
             }
         } // obiekt3
+        if (tempspace.includes("img/play-button.png") == true) {
+            if (wartosc == 4) {
+                ikony[tempvalue].src = "img/pause-button.png";
+                for (var i = 0, max = obiekty4.length; i < max; i++) {
+                    obiekty4[i].style.animationName = "anim" + wartosc + "_"
+                    + licznik4 + "_" + (i + 1);
+                    obiekty4[i].style.animationPlayState = "running";
+                }
+            }
+        } else {
+            if (wartosc == 4) {
+                ikony[tempvalue].src = "img/play-button.png";
+                for (var i = 0, max = obiekty4.length; i < max; i++) {
+                    obiekty4[i].style.animationPlayState = "paused";
+                }
+            }
+        } // obiekt4
     }
 });
 
@@ -104,6 +122,13 @@ stop.forEach(function(y) {
             }
             ikony[tempvalue].src = "img/play-button.png";
         } // obiekt3
+        if (wartosc == 4) {
+            for (var i = 0, max = obiekty4.length; i < max; i++) {
+                obiekty4[i].style.animationName = "none";
+                obiekty4[i].style.animationPlayState = "paused";
+            }
+            ikony[tempvalue].src = "img/play-button.png";
+        } // obiekt4
     }
 });
 
@@ -113,7 +138,7 @@ next.forEach(function(z) {
         wartosc = z.getAttribute("value");
         tempvalue = wartosc - 1;
         if (wartosc == 1) {
-            if (licznik1 < 4) {
+            if (licznik1 < 5) {
                 licznik1++;
             } else {
                 licznik1 = 1;
@@ -121,6 +146,22 @@ next.forEach(function(z) {
             for (var i = 0, max = obiekty1.length; i < max; i++) {
                 obiekty1[i].style.animationName = "anim" + wartosc + "_"
                 + licznik1 + "_" + (i + 1);
+            }
+            if (licznik1 == 5) {
+                for (var i = 0, max = obiekty1.length; i < max; i++) {
+                    obiekty1[i].style.animationDuration = "6s";
+                    obiekty1[i].style.animationTimingFunction = "linear";
+                }
+                obiekty1[0].style.animationDelay = 0 * 0.1 + "s";
+                obiekty1[1].style.animationDelay = 1 * 0.1 + "s";
+                obiekty1[3].style.animationDelay = 2 * 0.1 + "s";
+                obiekty1[2].style.animationDelay = 3 * 0.1 + "s";
+            } else {
+                for (var i = 0, max = obiekty1.length; i < max; i++) {
+                    obiekty1[i].style.animationDuration = "3s";
+                    obiekty1[i].style.animationTimingFunction = "ease";
+                    obiekty1[i].style.animationDelay = "0s";
+                }
             }
             animacja_nr[tempvalue].innerText = licznik1;
         } // obiekt1
@@ -174,5 +215,13 @@ next.forEach(function(z) {
             }
             animacja_nr[tempvalue].innerText = licznik3;
         } // obiekt3
+        if (wartosc == 4) {
+            if (licznik4 < 1) {
+                licznik4++;
+            } else {
+                licznik4 = 1;
+            }
+            animacja_nr[tempvalue].innerText = licznik4;
+        } // obiekt4
     }
 });

@@ -208,7 +208,126 @@ div.objectAnim1_1:nth-child(4) {
     75%  {right:0px; bottom:64px; transform: rotate3d(1, 0, 0, 180deg);}
     100% {right:0px; bottom:0px; transform: rotate3d(0, 0, 0, 0deg);}
 }
+/* ========= animacja 5 ========= */
+@keyframes anim1_5_1 {
+    0%    {transform: rotate3d(0, 0, 0, 0deg);}
+    2.5%  {transform: rotate3d(0, 0, 0, 0deg);}
+    5%    {transform: rotate3d(1, 0, 0, -30deg);}
+    12.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: red; border: double 6px red;}
+    12.5% {background-color: lawngreen; border: double 6px lawngreen;}
+    20%   {transform: rotate3d(1, 0, 0, 180deg);}
+    27.5% {transform: rotate3d(1, 0, 0, 180deg);}
+    30%   {transform: rotate3d(1, 0, 0, 210deg);}
+    37.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: lawngreen; border: double 6px lawngreen;}
+    37.5% {background-color: blue; border: double 6px blue;}
+    45%   {transform: rotate3d(0, 0, 0, 0deg);}
+    50%   {transform: rotate3d(0, 0, 0, 0deg);}
+    52.5% {transform: rotate3d(0, 0, 0, 0deg);}
+    55%   {transform: rotate3d(1, 0, 0, -30deg);}
+    62.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: blue; border: double 6px blue;}
+    62.5% {background-color: yellow; border: double 6px yellow;}
+    70%   {transform: rotate3d(1, 0, 0, 180deg);}
+    77.5% {transform: rotate3d(1, 0, 0, 180deg);}
+    80%   {transform: rotate3d(1, 0, 0, 210deg);}
+    87.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: yellow; border: double 6px yellow;}
+    87.5% {background-color: red; border: double 6px red;}
+    95%   {transform: rotate3d(0, 0, 0, 0deg);}
+    100%  {transform: rotate3d(0, 0, 0, 0deg);}
+}
 
+@keyframes anim1_5_2 {
+    0%    {transform: rotate3d(0, 0, 0, 0deg);}
+    2.5%  {transform: rotate3d(0, 0, 0, 0deg);}
+    5%    {transform: rotate3d(1, 0, 0, -30deg);}
+    12.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: yellow; border: double 6px yellow;}
+    12.5% {background-color: red; border: double 6px red;}
+    20%   {transform: rotate3d(1, 0, 0, 180deg);}
+    27.5% {transform: rotate3d(1, 0, 0, 180deg);}
+    30%   {transform: rotate3d(1, 0, 0, 210deg);}
+    37.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: red; border: double 6px red;}
+    37.5% {background-color: lawngreen; border: double 6px lawngreen;}
+    45%   {transform: rotate3d(0, 0, 0, 0deg);}
+    50%   {transform: rotate3d(0, 0, 0, 0deg);}
+    52.5% {transform: rotate3d(0, 0, 0, 0deg);}
+    55%   {transform: rotate3d(1, 0, 0, -30deg);}
+    62.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: lawngreen; border: double 6px lawngreen;}
+    62.5% {background-color: blue; border: double 6px blue;}
+    70%   {transform: rotate3d(1, 0, 0, 180deg);}
+    77.5% {transform: rotate3d(1, 0, 0, 180deg);}
+    80%   {transform: rotate3d(1, 0, 0, 210deg);}
+    87.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: blue; border: double 6px blue;}
+    87.5% {background-color: yellow; border: double 6px yellow;}
+    95%   {transform: rotate3d(0, 0, 0, 0deg);}
+    100%  {transform: rotate3d(0, 0, 0, 0deg);}
+}
+
+@keyframes anim1_5_3 {
+    0%    {transform: rotate3d(0, 0, 0, 0deg);}
+    2.5%  {transform: rotate3d(0, 0, 0, 0deg);}
+    5%    {transform: rotate3d(1, 0, 0, -30deg);}
+    12.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: lawngreen; border: double 6px lawngreen;}
+    12.5% {background-color: blue; border: double 6px blue;}
+    20%   {transform: rotate3d(1, 0, 0, 180deg);}
+    27.5% {transform: rotate3d(1, 0, 0, 180deg);}
+    30%   {transform: rotate3d(1, 0, 0, 210deg);}
+    37.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: blue; border: double 6px blue;}
+    37.5% {background-color: yellow; border: double 6px yellow;}
+    45%   {transform: rotate3d(0, 0, 0, 0deg);}
+    50%   {transform: rotate3d(0, 0, 0, 0deg);}
+    52.5% {transform: rotate3d(0, 0, 0, 0deg);}
+    55%   {transform: rotate3d(1, 0, 0, -30deg);}
+    62.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: yellow; border: double 6px yellow;}
+    62.5% {background-color: red; border: double 6px red;}
+    70%   {transform: rotate3d(1, 0, 0, 180deg);}
+    77.5% {transform: rotate3d(1, 0, 0, 180deg);}
+    80%   {transform: rotate3d(1, 0, 0, 210deg);}
+    87.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: red; border: double 6px red;}
+    87.5% {background-color: lawngreen; border: double 6px lawngreen;}
+    95%   {transform: rotate3d(0, 0, 0, 0deg);}
+    100%  {transform: rotate3d(0, 0, 0, 0deg);}
+}
+
+@keyframes anim1_5_4 {
+    0%    {transform: rotate3d(0, 0, 0, 0deg);}
+    2.5%  {transform: rotate3d(0, 0, 0, 0deg);}
+    5%    {transform: rotate3d(1, 0, 0, -30deg);}
+    12.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: blue; border: double 6px blue;}
+    12.5% {background-color: yellow; border: double 6px yellow;}
+    20%   {transform: rotate3d(1, 0, 0, 180deg);}
+    27.5% {transform: rotate3d(1, 0, 0, 180deg);}
+    30%   {transform: rotate3d(1, 0, 0, 210deg);}
+    37.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: yellow; border: double 6px yellow;}
+    37.5% {background-color: red; border: double 6px red;}
+    45%   {transform: rotate3d(0, 0, 0, 0deg);}
+    50%   {transform: rotate3d(0, 0, 0, 0deg);}
+    52.5% {transform: rotate3d(0, 0, 0, 0deg);}
+    55%   {transform: rotate3d(1, 0, 0, -30deg);}
+    62.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: red; border: double 6px red;}
+    62.5% {background-color: lawngreen; border: double 6px lawngreen;}
+    70%   {transform: rotate3d(1, 0, 0, 180deg);}
+    77.5% {transform: rotate3d(1, 0, 0, 180deg);}
+    80%   {transform: rotate3d(1, 0, 0, 210deg);}
+    87.49%{transform: rotate3d(1, 0, 0, 90deg);
+           background-color: lawngreen; border: double 6px lawngreen;}
+    87.5% {background-color: blue; border: double 6px blue;}
+    95%   {transform: rotate3d(0, 0, 0, 0deg);}
+    100%  {transform: rotate3d(0, 0, 0, 0deg);}
+}
 /* =================== blok 2 ====================== */
 div.obiekty2 {
     display: flex;
@@ -750,4 +869,83 @@ div.animacja3 div:nth-child(8) {
     93.75% {background-color: transparent; border: 2px solid transparent;}
     93.76% {background-color: white; border: 2px solid white;}
     100% {background-color: white; border: 2px solid white;} 
-} 
+}
+
+/* =================== blok 4 ====================== */
+div.obiekty4 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+div.obiekty4 div {
+    border-radius: 50%;
+    position: absolute;
+}
+/* ========= animacja 1 ========= */
+div.animacja4 div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    z-index: 5;
+    animation: anim4_1_1 2s infinite linear;
+    animation-play-state: paused;
+}
+div.animacja4 div:nth-child(2) {
+    width: 75px;
+    height: 75px;
+    opacity: 1;
+    background-color: lightgray;
+    z-index: 3;
+    animation: anim4_1_2 4s infinite linear;
+    animation-play-state: paused;
+}
+div.animacja4 div:nth-child(3) {
+    width: 110px;
+    height: 110px;
+    opacity: 0.6;
+    background-color: lightgray;
+    z-index: 2;
+    animation: anim4_1_3 4s infinite linear -1.33s;
+    animation-play-state: paused;
+}
+div.animacja4 div:nth-child(4) {
+    width: 150px;
+    height: 150px;
+    opacity: 0.3;
+    background-color: lightgray;
+    z-index: 1;
+    animation: anim4_1_4 4s infinite linear -2.66s;
+    animation-play-state: paused;
+}
+
+@keyframes anim4_1_1 {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(0.9);}
+    100% {transform: scale(1);}
+}
+@keyframes anim4_1_2 {
+    0%   {opacity: 1; width: 75px; height: 75px; z-index: 4;}
+    33%  {opacity: 0.6; width: 110px; height: 110px; z-index: 3;}
+    66%  {opacity: 0.3; width: 150px; height: 150px; z-index: 2;}
+    89%  {opacity: 0; width: 230px; height: 230px; z-index: 1;}
+    90%  {opacity: 0; width: 50px; height: 50px; z-index: 4;}
+    100% {opacity: 1; width: 75px; height: 75px; z-index: 3;}
+}
+@keyframes anim4_1_3 {
+    0%   {opacity: 1; width: 75px; height: 75px; z-index: 4;}
+    33%  {opacity: 0.6; width: 110px; height: 110px; z-index: 3;}
+    66%  {opacity: 0.3; width: 150px; height: 150px; z-index: 2;}
+    89%  {opacity: 0; width: 230px; height: 230px; z-index: 1;}
+    90%  {opacity: 0; width: 50px; height: 50px; z-index: 4;}
+    100% {opacity: 1; width: 75px; height: 75px; z-index: 3;}
+}
+@keyframes anim4_1_4 {
+    0%   {opacity: 1; width: 75px; height: 75px; z-index: 4;}
+    33%  {opacity: 0.6; width: 110px; height: 110px; z-index: 3;}
+    66%  {opacity: 0.3; width: 150px; height: 150px; z-index: 2;}
+    89%  {opacity: 0; width: 230px; height: 230px; z-index: 1;}
+    90%  {opacity: 0; width: 50px; height: 50px; z-index: 4;}
+    100% {opacity: 1; width: 75px; height: 75px; z-index: 3;}
+}
