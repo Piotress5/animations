@@ -216,10 +216,52 @@ next.forEach(function(z) {
             animacja_nr[tempvalue].innerText = licznik3;
         } // obiekt3
         if (wartosc == 4) {
-            if (licznik4 < 1) {
+            if (licznik4 < 4) {
                 licznik4++;
             } else {
                 licznik4 = 1;
+            }
+            for (var i = 0, max = obiekty4.length; i < max; i++) {
+                obiekty4[i].style.animationName = "anim" + wartosc + "_"
+                + licznik4 + "_" + (i + 1);
+            }
+            if (licznik4 == 1 || licznik4 == 4) {
+                obiekty4[0].style.animationDuration = "2s";
+                obiekty4[1].style.animationDuration = "4s";
+                obiekty4[2].style.animationDuration = "4s";
+                obiekty4[3].style.animationDuration = "4s";
+                obiekty4[0].style.animationDelay = "0s";
+                obiekty4[1].style.animationDelay = "0s";
+                obiekty4[2].style.animationDelay = "-1.33s";
+                obiekty4[3].style.animationDelay = "-2.66s";
+            } else if (licznik4 == 2) {
+                for (var i = 0, max = obiekty4.length; i < max; i++) {
+                    obiekty4[i].style.animationDuration = "2s";
+                }
+                obiekty4[1].style.animationDelay = "-1.6s";
+                obiekty4[2].style.animationDelay = "-1.5s";
+                obiekty4[3].style.animationDelay = "-1.4s";
+            } else if (licznik4 == 3) {
+                for (var i = 0, max = obiekty4.length; i < max; i++) {
+                    obiekty4[i].style.animationDuration = "2s";
+                }
+                obiekty4[1].style.animationDelay = "-1.6s";
+                obiekty4[2].style.animationDelay = "-1.5s";
+                obiekty4[3].style.animationDelay = "-1.4s";
+            }
+            if (licznik4 == 4) {
+                for (var i = 0, max = obiekty4.length; i < max; i++) {
+                    obiekty4[i].style.animationDirection = "reverse";
+                    obiekty4[1].style.animationDuration = "3s";
+                    obiekty4[2].style.animationDuration = "3s";
+                    obiekty4[3].style.animationDuration = "3s";
+                    obiekty4[2].style.animationDelay = "-1s";
+                    obiekty4[3].style.animationDelay = "-2s";
+                }
+            } else {
+                for (var i = 0, max = obiekty4.length; i < max; i++) {
+                    obiekty4[i].style.animationDirection = "normal";
+                }
             }
             animacja_nr[tempvalue].innerText = licznik4;
         } // obiekt4

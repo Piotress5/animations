@@ -949,3 +949,115 @@ div.animacja4 div:nth-child(4) {
     90%  {opacity: 0; width: 50px; height: 50px; z-index: 4;}
     100% {opacity: 1; width: 75px; height: 75px; z-index: 3;}
 }
+/* ========= animacja 2 ========= */
+@keyframes anim4_2_1 {
+    0%   {transform: scale(1);}
+    10%  {transform: scale(0.9);}
+    30%  {transform: scale(1.2);}
+    60%  {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+@keyframes anim4_2_2 {
+    0%   {transform: scale(0.7);}
+    10%  {transform: scale(0.75);}
+    30%  {transform: scale(1.2);}
+    60%  {transform: scale(1);}
+    100% {transform: scale(0.7);}
+}
+@keyframes anim4_2_3 {
+    0%   {transform: scale(0.5);}
+    10%  {transform: scale(0.8);}
+    35%  {transform: scale(1.2);}
+    60%  {transform: scale(1);}
+    100% {transform: scale(0.5);}
+}
+@keyframes anim4_2_4 {
+    0%   {transform: scale(0.4); background-color: transparent;
+          border: 4px solid lightgray;}
+    10%  {transform: scale(0.7); background-color: transparent;
+          border: 4px solid lightgray;}
+    35%  {transform: scale(1.5); background-color: transparent;
+          border: 4px solid transparent;}
+    60%  {transform: scale(1); background-color: transparent;
+          border: 4px solid transparent;}
+    100% {transform: scale(0.4); background-color: transparent;
+          border: 4px solid transparent;}
+}
+/* ========= animacja 3 ========= */
+@keyframes anim4_3_1 {
+    0%   {transform: scale(1);}
+    10%  {transform: scale(1.1);}
+    30%  {transform: scale(1.4);}
+    50%  {transform: scale(0.8);}
+    70%  {transform: scale(0.8);}
+    95%  {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+@keyframes anim4_3_2 {
+    0%   {transform: scale(0.5); background-color: transparent;
+          border: 4px solid transparent;}
+    32%  {transform: scale(0.5); background-color: transparent;
+          border: 4px solid lightgray;}
+    42%  {transform: scale(1.5); background-color: transparent;
+          border: 4px solid transparent;}
+    100% {transform: scale(0.5); background-color: transparent;
+          border: 4px solid transparent;}
+}
+@keyframes anim4_3_3 {
+    0%   {transform: scale(0.4); background-color: transparent;
+          border: 4px solid transparent;}
+    32%  {transform: scale(0.4); background-color: transparent;
+          border: 4px solid lightgray;}
+    42%  {transform: scale(1.5); background-color: transparent;
+          border: 4px solid transparent;}
+    100% {transform: scale(0.4); background-color: transparent;
+          border: 4px solid transparent;}
+}
+@keyframes anim4_3_4 {
+    0%   {transform: scale(0.3); background-color: transparent;
+          border: 4px solid transparent;}
+    32%  {transform: scale(0.3); background-color: transparent;
+          border: 4px solid lightgray;}
+    42%  {transform: scale(1.6); background-color: transparent;
+          border: 4px solid transparent;}
+    100% {transform: scale(0.3); background-color: transparent;
+          border: 4px solid transparent;}
+}
+/* ========= animacja 4 ========= */
+@keyframes anim4_4_1 {
+    0%   {transform: scale(1); background-color: black;}
+    25%  {transform: scale(0.8);}
+    50%  {transform: scale(1);}
+    75%  {transform: scale(0.8);}
+    100% {transform: scale(1); background-color: black;}
+}
+@keyframes anim4_4_2 {
+    0%   {opacity: 1; width: 75px; height: 75px; z-index: 4;
+          background-color: #222;}
+    33%  {opacity: 0.6; width: 110px; height: 110px; z-index: 3;}
+    66%  {opacity: 0.3; width: 150px; height: 150px; z-index: 2;}
+    89%  {opacity: 0; width: 230px; height: 230px; z-index: 1;}
+    90%  {opacity: 0; width: 50px; height: 50px; z-index: 4;}
+    100% {opacity: 1; width: 75px; height: 75px; z-index: 3;
+          background-color: #222;}
+}
+@keyframes anim4_4_3 {
+    0%   {opacity: 1; width: 75px; height: 75px; z-index: 4;
+          background-color: #222;}
+    33%  {opacity: 0.6; width: 110px; height: 110px; z-index: 3;}
+    66%  {opacity: 0.3; width: 150px; height: 150px; z-index: 2;}
+    89%  {opacity: 0; width: 230px; height: 230px; z-index: 1;}
+    90%  {opacity: 0; width: 50px; height: 50px; z-index: 4;}
+    100% {opacity: 1; width: 75px; height: 75px; z-index: 3;
+          background-color: #222;}
+}
+@keyframes anim4_4_4 {
+    0%   {opacity: 1; width: 75px; height: 75px; z-index: 4;
+          background-color: #222;}
+    33%  {opacity: 0.6; width: 110px; height: 110px; z-index: 3;}
+    66%  {opacity: 0.3; width: 150px; height: 150px; z-index: 2;}
+    89%  {opacity: 0; width: 230px; height: 230px; z-index: 1;}
+    90%  {opacity: 0; width: 50px; height: 50px; z-index: 4;}
+    100% {opacity: 1; width: 75px; height: 75px; z-index: 3;
+          background-color: #222;}
+}
