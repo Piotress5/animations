@@ -166,7 +166,7 @@ next.forEach(function(z) {
             animacja_nr[tempvalue].innerText = licznik1;
         } // obiekt1
         if (wartosc == 2) {
-            if (licznik2 < 3) {
+            if (licznik2 < 5) {
                 licznik2++;
             } else {
                 licznik2 = 1;
@@ -179,13 +179,17 @@ next.forEach(function(z) {
                 for (var i = 0, max = obiekty2.length; i < max; i++) {
                     obiekty2[i].style.animationDuration = obiekty2_czasy[i];
                 }
-            } else if (licznik2 == 2) {
+            } else if (licznik2 == 2 || licznik2 == 4) {
                 for (var i = 0, max = obiekty2.length; i < max; i++) {
                     obiekty2[i].style.animationDuration = "2s";
                 }
             } else if (licznik2 == 3) {
                 for (var i = 0, max = obiekty2.length; i < max; i++) {
                     obiekty2[i].style.animationDuration = "1.5s";
+                }
+            } else if (licznik2 == 5) {
+                for (var i = 0, max = obiekty2.length; i < max; i++) {
+                    obiekty2[i].style.animationDuration = "8s";
                 }
             }
             animacja_nr[tempvalue].innerText = licznik2;
