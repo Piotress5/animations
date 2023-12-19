@@ -1169,15 +1169,118 @@ div.animacja4 div:nth-child(4) {
 }
 
 /* =================== blok 5 ====================== */
-div.obiekty4 {
+div.obiekty5 {
     display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
 }
 
-div.obiekty4 div {
+div.obiekty5 div {
     border-radius: 50%;
     position: absolute;
 }
 /* ========= animacja 1 ========= */
+@property --angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+div.animacja5 div.objectAnim5_1 {
+    width: 82px;
+    height: 82px;
+    background: conic-gradient(orange var(--angle), orange var(--angle));
+    animation: anim5_1_0 3s infinite ease;
+    animation-play-state: paused;
+}
+div.maskaObject5 div.objectAnim5_3 {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(red var(--angle), red var(--angle));
+    position: absolute;
+    animation: anim5_1_0 3s infinite ease;
+    animation-play-state: paused;
+}
+div.maskaObject5 {
+    width: 100px;
+    height: 100px;
+    -webkit-mask-image: radial-gradient(circle,
+    rgba(0, 0, 0, 0) 57%, black 57%);
+    mask-image: radial-gradient(circle,
+    rgba(0, 0, 0, 0) 57%, black 57%);
+}
+
+@keyframes anim5_1_1 {
+    0%   {transform: rotate3d(0, 0, 0, 0deg);
+         background: conic-gradient(orange var(--angle),
+         transparent calc(var(--angle))); --angle: 0deg;}
+    50%  {transform: rotate3d(0, 0, 0, 0deg);
+         background: conic-gradient(orange var(--angle),
+         transparent calc(var(--angle))); --angle: 360deg;}
+    50.1%{transform: rotate3d(0, 1, 0, 180deg);}
+    100% {transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(orange var(--angle),
+         transparent calc(var(--angle))); --angle: 0deg;}
+}
+@keyframes anim5_1_3 {
+    0%   {transform: rotate3d(0, 0, 0, 0deg);
+         background: conic-gradient(red var(--angle),
+         transparent calc(var(--angle))); --angle: 0deg;}
+    50%  {transform: rotate3d(0, 0, 0, 0deg);
+         background: conic-gradient(red var(--angle),
+         transparent calc(var(--angle))); --angle: 360deg;}
+    50.1%{transform: rotate3d(0, 1, 0, 180deg);}
+    100% {transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(red var(--angle),
+         transparent calc(var(--angle))); --angle: 0deg;}
+}
+/* ========= animacja 2 ========= */
+@keyframes anim5_2_1 {
+    0%   {opacity: 0}
+    100% {opacity: 0}
+}
+@keyframes anim5_2_3 {
+    0%   {background: conic-gradient(red 0deg, red 45deg, transparent 45deg,
+         transparent 170deg, red 360deg); transform: rotate(0deg);}
+    100% {background: conic-gradient(red 0deg, red 45deg, transparent 45deg,
+         transparent 170deg, red 360deg); transform: rotate(360deg);}
+}
+/* ========= animacja 3 ========= */
+@keyframes anim5_3_1 {
+    0%   {background: repeating-conic-gradient(orange 0deg, orange 90deg,
+          transparent 90deg, transparent 180deg); transform: rotate(0deg);}
+    100% {background: repeating-conic-gradient(orange 0deg, orange 90deg,
+        transparent 90deg, transparent 180deg); transform: rotate(360deg);}
+}
+@keyframes anim5_3_3 {
+    0%   {transform: rotate3d(0, 1, 0, 0deg);
+         background: conic-gradient(red var(--angle),
+         transparent calc(var(--angle))); --angle: 0deg;}
+    20%  {transform: rotate3d(0, 0, 0, 0deg);
+         background: conic-gradient(red var(--angle),
+         transparent calc(var(--angle))); --angle: 360deg;}
+    20.1%{transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(red var(--angle),
+        yellow calc(var(--angle))); --angle: 360deg;}
+    40%  {transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(red var(--angle),
+        yellow calc(var(--angle))); --angle: 0deg;}
+    40.1%{transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(yellow var(--angle),
+        lawngreen calc(var(--angle))); --angle: 360deg;}
+    60%  {transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(yellow var(--angle),
+         lawngreen calc(var(--angle))); --angle: 0deg;}
+    60.1%{transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(lawngreen var(--angle),
+        blue calc(var(--angle))); --angle: 360deg;}
+    80%  {transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(lawngreen var(--angle),
+         blue calc(var(--angle))); --angle: 0deg;}
+    80.1%{transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(blue var(--angle),
+         transparent calc(var(--angle))); --angle: 360deg;}
+    100%  {transform: rotate3d(0, 1, 0, 180deg);
+         background: conic-gradient(blue var(--angle),
+         transparent calc(var(--angle))); --angle: 0deg;}
+}

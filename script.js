@@ -7,6 +7,7 @@ const obiekty2 = document.querySelectorAll("div.obiekty2 div");
 const obiekty2_czasy = ["3s", "5s", "6s", "8s", "8s"];
 const obiekty3 = document.querySelectorAll("div.obiekty3 div");
 const obiekty4 = document.querySelectorAll("div.obiekty4 div");
+const obiekty5 = document.querySelectorAll("div.obiekty5 div");
 const animacja_nr = document.querySelectorAll("p.animacja_numer");
 let tempspace = "";
 let tempvalue = 0;
@@ -93,6 +94,23 @@ play.forEach(function(x) {
                 }
             }
         } // obiekt4
+        if (tempspace.includes("img/play-button.png") == true) {
+            if (wartosc == 5) {
+                ikony[tempvalue].src = "img/pause-button.png";
+                for (var i = 0, max = obiekty5.length; i < max; i++) {
+                    obiekty5[i].style.animationName = "anim" + wartosc + "_"
+                    + licznik5 + "_" + (i + 1);
+                    obiekty5[i].style.animationPlayState = "running";
+                }
+            }
+        } else {
+            if (wartosc == 5) {
+                ikony[tempvalue].src = "img/play-button.png";
+                for (var i = 0, max = obiekty5.length; i < max; i++) {
+                    obiekty5[i].style.animationPlayState = "paused";
+                }
+            }
+        } // obiekt5
     }
 });
 
@@ -129,6 +147,13 @@ stop.forEach(function(y) {
             }
             ikony[tempvalue].src = "img/play-button.png";
         } // obiekt4
+        if (wartosc == 5) {
+            for (var i = 0, max = obiekty5.length; i < max; i++) {
+                obiekty5[i].style.animationName = "none";
+                obiekty5[i].style.animationPlayState = "paused";
+            }
+            ikony[tempvalue].src = "img/play-button.png";
+        } // obiekt5
     }
 });
 
@@ -269,5 +294,35 @@ next.forEach(function(z) {
             }
             animacja_nr[tempvalue].innerText = licznik4;
         } // obiekt4
+        if (wartosc == 5) {
+            if (licznik5 < 3) {
+                licznik5++;
+            } else {
+                licznik5 = 1;
+            }
+            for (var i = 0, max = obiekty5.length; i < max; i++) {
+                obiekty5[i].style.animationName = "anim" + wartosc + "_"
+                + licznik5 + "_" + (i + 1);
+            }
+            if (licznik5 == 1) {
+                for (var i = 0, max = obiekty5.length; i < max; i++) {
+                    obiekty5[i].style.animationDuration = "3s";
+                    obiekty5[i].style.animationTimingFunction = "ease";
+                }
+            } else if (licznik5 == 2) {
+                for (var i = 0, max = obiekty5.length; i < max; i++) {
+                    obiekty5[i].style.animationTimingFunction = "linear";
+                }
+                obiekty5[0].style.animationDuration = "2.5s";
+                obiekty5[2].style.animationDuration = "1s";
+            } else if (licznik5 == 3) {
+                for (var i = 0, max = obiekty5.length; i < max; i++) {
+                    obiekty5[i].style.animationTimingFunction = "linear";
+                }
+                obiekty5[0].style.animationDuration = "2.5s";
+                obiekty5[2].style.animationDuration = "8s";
+            }
+            animacja_nr[tempvalue].innerText = licznik5;
+        } // obiekt5
     }
 });
