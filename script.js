@@ -8,6 +8,7 @@ const obiekty2_czasy = ["3s", "5s", "6s", "8s", "8s"];
 const obiekty3 = document.querySelectorAll("div.obiekty3 div");
 const obiekty4 = document.querySelectorAll("div.obiekty4 div");
 const obiekty5 = document.querySelectorAll("div.obiekty5 div");
+const obiekty6 = document.querySelectorAll("div.obiekty6 div");
 const animacja_nr = document.querySelectorAll("p.animacja_numer");
 let tempspace = "";
 let tempvalue = 0;
@@ -111,6 +112,23 @@ play.forEach(function(x) {
                 }
             }
         } // obiekt5
+        if (tempspace.includes("img/play-button.png") == true) {
+            if (wartosc == 6) {
+                ikony[tempvalue].src = "img/pause-button.png";
+                for (var i = 0, max = obiekty6.length; i < max; i++) {
+                    obiekty6[i].style.animationName = "anim" + wartosc + "_"
+                    + licznik6 + "_" + (i + 1);
+                    obiekty6[i].style.animationPlayState = "running";
+                }
+            }
+        } else {
+            if (wartosc == 6) {
+                ikony[tempvalue].src = "img/play-button.png";
+                for (var i = 0, max = obiekty6.length; i < max; i++) {
+                    obiekty6[i].style.animationPlayState = "paused";
+                }
+            }
+        } // obiekt6
     }
 });
 
@@ -154,6 +172,13 @@ stop.forEach(function(y) {
             }
             ikony[tempvalue].src = "img/play-button.png";
         } // obiekt5
+        if (wartosc == 6) {
+            for (var i = 0, max = obiekty6.length; i < max; i++) {
+                obiekty6[i].style.animationName = "none";
+                obiekty6[i].style.animationPlayState = "paused";
+            }
+            ikony[tempvalue].src = "img/play-button.png";
+        } // obiekt6
     }
 });
 
@@ -229,23 +254,31 @@ next.forEach(function(z) {
                 obiekty3[i].style.animationName = "anim" + wartosc + "_"
                 + licznik3 + "_" + (i + 1);
             }
-            if (licznik3 == 3 || licznik3 == 4) {
+            if (licznik3 == 3) {
+                for (var i = 0, max = obiekty3.length; i < max; i++) {
+                    obiekty3[i].style.animationDuration = "1s";
+                    obiekty3[i].style.animationDelay = 0.125 * i + "s";
+                }
+            } else if (licznik3 == 4) {
                 for (var i = 0, max = obiekty3.length; i < max; i++) {
                     obiekty3[i].style.animationDuration = "3s";
+                    obiekty3[i].style.animationDelay = "0s";
                 }
             } else if (licznik3 == 5) {
                 for (var i = 0, max = obiekty3.length; i < max; i++) {
                     obiekty3[i].style.animationDuration = "5s";
+                    obiekty3[i].style.animationDelay = "0s";
                 }
             } else {
                 for (var i = 0, max = obiekty3.length; i < max; i++) {
                     obiekty3[i].style.animationDuration = "2s";
+                    obiekty3[i].style.animationDelay = "0s";
                 }
             }
             animacja_nr[tempvalue].innerText = licznik3;
         } // obiekt3
         if (wartosc == 4) {
-            if (licznik4 < 4) {
+            if (licznik4 < 5) {
                 licznik4++;
             } else {
                 licznik4 = 1;
@@ -254,12 +287,11 @@ next.forEach(function(z) {
                 obiekty4[i].style.animationName = "anim" + wartosc + "_"
                 + licznik4 + "_" + (i + 1);
             }
-            if (licznik4 == 1 || licznik4 == 4) {
+            if (licznik4 == 1 || licznik4 == 5) {
                 obiekty4[0].style.animationDuration = "2s";
                 obiekty4[1].style.animationDuration = "4s";
                 obiekty4[2].style.animationDuration = "4s";
                 obiekty4[3].style.animationDuration = "4s";
-                obiekty4[0].style.animationDelay = "0s";
                 obiekty4[1].style.animationDelay = "0s";
                 obiekty4[2].style.animationDelay = "-1.33s";
                 obiekty4[3].style.animationDelay = "-2.66s";
@@ -277,8 +309,16 @@ next.forEach(function(z) {
                 obiekty4[1].style.animationDelay = "-1.6s";
                 obiekty4[2].style.animationDelay = "-1.5s";
                 obiekty4[3].style.animationDelay = "-1.4s";
+            } else if (licznik4 == 4) {
+                obiekty4[0].style.animationDuration = "1s";
+                obiekty4[1].style.animationDuration = "2s";
+                obiekty4[2].style.animationDuration = "2s";
+                obiekty4[3].style.animationDuration = "2s";
+                obiekty4[1].style.animationDelay = "0s";
+                obiekty4[2].style.animationDelay = "-1s";
+                obiekty4[3].style.animationDelay = "-2s";
             }
-            if (licznik4 == 4) {
+            if (licznik4 == 5) {
                 for (var i = 0, max = obiekty4.length; i < max; i++) {
                     obiekty4[i].style.animationDirection = "reverse";
                     obiekty4[1].style.animationDuration = "3s";
@@ -295,7 +335,7 @@ next.forEach(function(z) {
             animacja_nr[tempvalue].innerText = licznik4;
         } // obiekt4
         if (wartosc == 5) {
-            if (licznik5 < 3) {
+            if (licznik5 < 5) {
                 licznik5++;
             } else {
                 licznik5 = 1;
@@ -321,8 +361,74 @@ next.forEach(function(z) {
                 }
                 obiekty5[0].style.animationDuration = "2.5s";
                 obiekty5[2].style.animationDuration = "8s";
+            } else if (licznik5 == 4) {
+                for (var i = 0, max = obiekty5.length; i < max; i++) {
+                    obiekty5[i].style.animationTimingFunction = "linear";
+                }
+                obiekty5[0].style.animationDuration = "2.5s";
+                obiekty5[2].style.animationDuration = "1s";
+            } else if (licznik5 == 5) {
+                for (var i = 0, max = obiekty5.length; i < max; i++) {
+                    obiekty5[i].style.animationTimingFunction = "linear";
+                }
+                obiekty5[0].style.animationDuration = "2.5s";
+                obiekty5[2].style.animationDuration = "2.5s";
             }
             animacja_nr[tempvalue].innerText = licznik5;
         } // obiekt5
+        if (wartosc == 6) {
+            if (licznik6 < 5) {
+                licznik6++;
+            } else {
+                licznik6 = 1;
+            }
+            for (var i = 0, max = obiekty6.length; i < max; i++) {
+                obiekty6[i].style.animationName = "anim" + wartosc + "_"
+                + licznik6 + "_" + (i + 1);
+            }
+            if (licznik6 == 1 || licznik6 == 4) {
+                for (var i = 0, max = obiekty6.length; i < max; i++) {
+                    obiekty6[i].style.animationDuration = "2s";
+                    obiekty6[i].style.animationTimingFunction = "ease";
+                }
+                obiekty6[0].style.animationDelay = "0.4s";
+                obiekty6[1].style.animationDelay = "0.2s";
+                obiekty6[2].style.animationDelay = "0s";
+                obiekty6[3].style.animationDelay = "0.6s";
+                obiekty6[4].style.animationDelay = "0.4s";
+                obiekty6[5].style.animationDelay = "0.2s";
+                obiekty6[6].style.animationDelay = "0.8s";
+                obiekty6[7].style.animationDelay = "0.6s";
+                obiekty6[8].style.animationDelay = "0.4s";
+            } else if (licznik6 == 2) {
+                for (var i = 0, max = obiekty6.length; i < max; i++) {
+                    obiekty6[i].style.animationDuration = "2.2s";
+                    obiekty6[i].style.animationDelay = "0s";
+                    obiekty6[i].style.animationTimingFunction = "ease";
+                }
+            } else if (licznik6 == 3) {
+                for (var i = 0, max = obiekty6.length; i < max; i++) {
+                    obiekty6[i].style.animationDuration = "3.5s";
+                    obiekty6[i].style.animationDelay = "0s";
+                    obiekty6[i].style.animationTimingFunction = "ease";
+                }
+            } else if (licznik6 == 5) {
+                for (var i = 0, max = obiekty6.length; i < max; i++) {
+                    obiekty6[i].style.animationDuration = "2s";
+                    obiekty6[i].style.animationTimingFunction = "ease";
+                }
+                obiekty6[0].style.animationDelay = "0s";
+                obiekty6[1].style.animationDelay = "-0.4s";
+                obiekty6[2].style.animationDelay = "-0.8s";
+                obiekty6[3].style.animationDelay = "-1.2s";
+                obiekty6[4].style.animationDelay = "0s";
+                obiekty6[5].style.animationDelay = "-1.2s";
+                obiekty6[6].style.animationDelay = "-0.8s";
+                obiekty6[7].style.animationDelay = "-0.4s";
+                obiekty6[8].style.animationDelay = "0s";
+                obiekty6[4].style.animationDuration = "6s";
+            }
+            animacja_nr[tempvalue].innerText = licznik6;
+        } // obiekt6
     }
 });
