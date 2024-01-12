@@ -105,6 +105,10 @@ div.options img {
     height: 24px;
 }
 
+.prev img {
+    transform: rotate(180deg);
+}
+
 p.animacja_numer {
     position: absolute;
     bottom: 5%;

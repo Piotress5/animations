@@ -21,7 +21,6 @@ div.obiekty1 div {
 div.objectAnim1_1:nth-child(2) {
     background-color: yellow;
     border: double 6px yellow;
-    /* position: relative; */
 }
 
 div.objectAnim1_1:nth-child(3) {
@@ -38,17 +37,28 @@ div.objectAnim1_1:nth-child(4) {
     animation: anim1_1_1 3s infinite;
     animation-play-state: paused;
 }
+
+.animacja1 div.objectAnim1_1:nth-child(2) {
+    animation: anim1_1_2 3s infinite;
+    animation-play-state: paused;
+}
+
+.animacja1 div.objectAnim1_1:nth-child(3) {
+    animation: anim1_1_3 3s infinite;
+    animation-play-state: paused;
+}
+
+.animacja1 div.objectAnim1_1:nth-child(4) {
+    animation: anim1_1_4 3s infinite;
+    animation-play-state: paused;
+}
+
 @keyframes anim1_1_1 {
     0%   {left:0px; top:0px;}
     25%  {left:64px; top:0px; rotate: 90deg;}
     50%  {left:64px; top:64px; rotate: 180deg;}
     75%  {left:0px; top:64px; rotate: 270deg;}
     100% {left:0px; top:0px; rotate: 360deg;}
-}
-
-.animacja1 div.objectAnim1_1:nth-child(2) {
-    animation: anim1_1_2 3s infinite;
-    animation-play-state: paused;
 }
 @keyframes anim1_1_2 {
     0%   {right:0px; top:0px; }
@@ -57,22 +67,12 @@ div.objectAnim1_1:nth-child(4) {
     75%  {right:64px; top:0px; rotate: 270deg;}
     100% {right:0px; top:0px; rotate: 360deg;}
 }
-
-.animacja1 div.objectAnim1_1:nth-child(3) {
-    animation: anim1_1_3 3s infinite;
-    animation-play-state: paused;
-}
 @keyframes anim1_1_3 {
     0%   {left:0px; bottom:0px;}
     25%  {left:0px; bottom:64px; rotate: 90deg;}
     50%  {left:64px; bottom:64px; rotate: 180deg;}
     75%  {left:64px; bottom:0px; rotate: 270deg;}
     100% {left:0px; bottom:0px; rotate: 360deg;}
-}
-
-.animacja1 div.objectAnim1_1:nth-child(4) {
-    animation: anim1_1_4 3s infinite;
-    animation-play-state: paused;
 }
 @keyframes anim1_1_4 {
     0%   {right:0px; bottom:0px;}
@@ -93,7 +93,6 @@ div.objectAnim1_1:nth-child(4) {
     87%  {left:0px; top:0px; scale: 1; z-index: 1;}
     100% {left:0px; top:0px; scale: 1; z-index: 1;}
 }
-
 @keyframes anim1_2_2 {
     0%   {right:0px; top:0px; scale: 1; z-index: 1;}
     13%  {right:0px; top:0px; scale: 1; z-index: 1;}
@@ -105,7 +104,6 @@ div.objectAnim1_1:nth-child(4) {
     87%  {scale: 0.5; z-index: 1;}
     100% {right:0px; top:0px; scale: 1; z-index: 1;}
 }
-
 @keyframes anim1_2_3 {
     0%   {left:0px; bottom:0px; scale: 1; z-index: 1;}
     13%  {left:0px; bottom:0px; scale: 1; z-index: 1;}
@@ -117,7 +115,6 @@ div.objectAnim1_1:nth-child(4) {
     87%  {scale: 1.5; z-index: 4;}
     100% {left:0px; bottom:0px; scale: 1; z-index: 4;}
 }
-
 @keyframes anim1_2_4 {
     0%   {right:0px; bottom:0px; scale: 1; z-index: 1;}
     13%  {scale: 0.5; z-index: 1;}
@@ -137,7 +134,6 @@ div.objectAnim1_1:nth-child(4) {
     75%  {left:0px; top:64px; rotate: 540deg;}
     100% {left:0px; top:0px; rotate: 720deg;}
 }
-
 @keyframes anim1_3_2 {
     0%   {right:0px; top:0px; }
     25%  {right:0px; top:64px; rotate: -180deg;}
@@ -145,7 +141,6 @@ div.objectAnim1_1:nth-child(4) {
     75%  {right:64px; top:0px; rotate: -540deg;}
     100% {right:0px; top:0px; rotate: -720deg;}
 }
-
 @keyframes anim1_3_3 {
     0%   {left:0px; bottom:0px;}
     25%  {left:0px; bottom:64px; rotate: -180deg;}
@@ -153,7 +148,6 @@ div.objectAnim1_1:nth-child(4) {
     75%  {left:64px; bottom:0px; rotate: -540deg;}
     100% {left:0px; bottom:0px; rotate: -720deg;}
 }
-
 @keyframes anim1_3_4 {
     0%   {right:0px; bottom:0px;}
     25%  {right:64px; bottom:0px; rotate: 180deg;}
@@ -169,7 +163,6 @@ div.objectAnim1_1:nth-child(4) {
     75%  {left:0px; top:64px; transform: rotate3d(1, 0, 0, 180deg);}
     100% {left:0px; top:0px; transform: rotate3d(0, 0, 0, 0deg);}
 }
-
 @keyframes anim1_4_2 { 
     0%   {right:0px; top:0px; transform: rotate3d(0, 0, 0, 0deg);}
     25%  {right:0px; top:64px; transform: rotate3d(1, 0, 0, 180deg);}
@@ -177,7 +170,6 @@ div.objectAnim1_1:nth-child(4) {
     75%  {right:64px; top:0px; transform: rotate3d(0, 1, 0, 180deg);}
     100% {right:0px; top:0px; transform: rotate3d(0, 0, 0, 0deg);}
 }
-
 @keyframes anim1_4_3 { 
     0%   {left:0px; bottom:0px; transform: rotate3d(0, 0, 0, 0deg);}
     25%  {left:0px; bottom:64px; transform: rotate3d(1, 0, 0, 180deg);}
@@ -185,7 +177,6 @@ div.objectAnim1_1:nth-child(4) {
     75%  {left:64px; bottom:0px; transform: rotate3d(0, 1, 0, 180deg);}
     100% {left:0px; bottom:0px; transform: rotate3d(0, 0, 0, 0deg);}
 }
-
 @keyframes anim1_4_4 { 
     0%   {right:0px; bottom:0px; transform: rotate3d(0, 0, 0, 0deg);}
     25%  {right:64px; bottom:0px; transform: rotate3d(0, 1, 0, 180deg);}
@@ -223,7 +214,6 @@ div.objectAnim1_1:nth-child(4) {
     95%   {transform: rotate3d(0, 0, 0, 0deg);}
     100%  {transform: rotate3d(0, 0, 0, 0deg);}
 }
-
 @keyframes anim1_5_2 {
     0%    {transform: rotate3d(0, 0, 0, 0deg);}
     2.5%  {transform: rotate3d(0, 0, 0, 0deg);}
@@ -253,7 +243,6 @@ div.objectAnim1_1:nth-child(4) {
     95%   {transform: rotate3d(0, 0, 0, 0deg);}
     100%  {transform: rotate3d(0, 0, 0, 0deg);}
 }
-
 @keyframes anim1_5_3 {
     0%    {transform: rotate3d(0, 0, 0, 0deg);}
     2.5%  {transform: rotate3d(0, 0, 0, 0deg);}
@@ -283,7 +272,6 @@ div.objectAnim1_1:nth-child(4) {
     95%   {transform: rotate3d(0, 0, 0, 0deg);}
     100%  {transform: rotate3d(0, 0, 0, 0deg);}
 }
-
 @keyframes anim1_5_4 {
     0%    {transform: rotate3d(0, 0, 0, 0deg);}
     2.5%  {transform: rotate3d(0, 0, 0, 0deg);}
@@ -313,6 +301,7 @@ div.objectAnim1_1:nth-child(4) {
     95%   {transform: rotate3d(0, 0, 0, 0deg);}
     100%  {transform: rotate3d(0, 0, 0, 0deg);}
 }
+
 /* =================== blok 2 ====================== */
 div.obiekty2 {
     display: flex;
@@ -383,23 +372,19 @@ div.animacja2 div:nth-child(5) {
     0% {transform: translate(-50%, -50%) rotate(360deg);} 
     100% {transform: translate(-50%, -50%) rotate(-360deg);} 
 }
-
 @keyframes anim2_1_2 {
     0% {transform: translate(-50%, -50%) rotate(-360deg);} 
     100% {transform: translate(-50%, -50%) rotate(360deg);} 
 }
-
 @keyframes anim2_1_3 {
     0% {transform: translate(-50%, -50%) rotate(360deg);} 
     75% {transform: translate(-50%, -50%) rotate(-180deg);}
     100% {transform: translate(-50%, -50%) rotate(360deg);}
 }
-
 @keyframes anim2_1_4 {
     0% {transform: translate(-50%, -50%) rotate(-360deg);} 
     100% {transform: translate(-50%, -50%) rotate(360deg);} 
 }
-
 @keyframes anim2_1_5 {
     0% {transform: translate(-50%, -50%) rotate(-360deg);} 
     100% {transform: translate(-50%, -50%) rotate(360deg);} 
@@ -410,25 +395,21 @@ div.animacja2 div:nth-child(5) {
     5% {transform: translate(-50%, -50%) rotate(360deg);}
     100% {transform: translate(-50%, -50%) rotate(-360deg);} 
 }
-
 @keyframes anim2_2_2 {
     0% {transform: translate(-50%, -50%) rotate(360deg);}
     15% {transform: translate(-50%, -50%) rotate(360deg);} 
     100% {transform: translate(-50%, -50%) rotate(-360deg);} 
 }
-
 @keyframes anim2_2_3 {
     0% {transform: translate(-50%, -50%) rotate(360deg);}
     25% {transform: translate(-50%, -50%) rotate(360deg);} 
     100% {transform: translate(-50%, -50%) rotate(-360deg);}
 }
-
 @keyframes anim2_2_4 {
     0% {transform: translate(-50%, -50%) rotate(360deg);}
     35% {transform: translate(-50%, -50%) rotate(360deg);} 
     100% {transform: translate(-50%, -50%) rotate(-360deg);} 
 }
-
 @keyframes anim2_2_5 {
     0% {transform: translate(-50%, -50%) rotate(0deg);} 
     100% {transform: translate(-50%, -50%) rotate(0deg);} 
@@ -438,22 +419,18 @@ div.animacja2 div:nth-child(5) {
     0% {transform: translate(-50%, -50%) rotate(315deg);}
     100% {transform: translate(-50%, -50%) rotate(-405deg);} 
 }
-
 @keyframes anim2_3_2 {
     0% {transform: translate(-50%, -50%) rotate(255deg);}
     100% {transform: translate(-50%, -50%) rotate(-465deg);} 
 }
-
 @keyframes anim2_3_3 {
     0% {transform: translate(-50%, -50%) rotate(180deg);}
     100% {transform: translate(-50%, -50%) rotate(-540deg);}
 }
-
 @keyframes anim2_3_4 {
     0% {transform: translate(-50%, -50%) rotate(80deg);}
     100% {transform: translate(-50%, -50%) rotate(-640deg);} 
 }
-
 @keyframes anim2_3_5 {
     0% {transform: translate(-50%, -50%) rotate(0deg);} 
     100% {transform: translate(-50%, -50%) rotate(0deg);} 
@@ -464,27 +441,23 @@ div.animacja2 div:nth-child(5) {
     25% {transform: translate(-50%, -50%) rotate(-360deg);}
     100% {transform: translate(-50%, -50%) rotate(-360deg);} 
 }
-
 @keyframes anim2_4_2 {
     0% {transform: translate(-50%, -50%) rotate(0deg);}
     25% {transform: translate(-50%, -50%) rotate(0deg);}
     50% {transform: translate(-50%, -50%) rotate(-360deg)} 
     100% {transform: translate(-50%, -50%) rotate(-360deg);} 
 }
-
 @keyframes anim2_4_3 {
     0% {transform: translate(-50%, -50%) rotate(0deg);}
     50% {transform: translate(-50%, -50%) rotate(0deg);}
     75% {transform: translate(-50%, -50%) rotate(-360deg);}
     100% {transform: translate(-50%, -50%) rotate(-360deg);} 
 }
-
 @keyframes anim2_4_4 {
     0% {transform: translate(-50%, -50%) rotate(0deg);}
     75% {transform: translate(-50%, -50%) rotate(0deg);}
     100% {transform: translate(-50%, -50%) rotate(-360deg);} 
 }
-
 @keyframes anim2_4_5 {
     0% {transform: translate(-50%, -50%) rotate(0deg);} 
     100% {transform: translate(-50%, -50%) rotate(0deg);} 
@@ -516,7 +489,6 @@ div.animacja2 div:nth-child(5) {
         transparent 75deg, transparent 180deg) border-box;
         --hue: 60;}
 }
-
 @keyframes anim2_5_2 {
     0%  {transform: translate(-50%, -50%) rotate(180deg);
         background: conic-gradient(var(--color) 0deg, var(--color) 75deg,
@@ -543,17 +515,14 @@ div.animacja2 div:nth-child(5) {
         transparent 75deg, transparent 180deg) border-box;
         --hue: 0;}
 }
-
 @keyframes anim2_5_3 {
     0% {transform: translate(-50%, -50%); background: transparent;}
     100% {transform: translate(-50%, -50%); background: transparent;} 
 }
-
 @keyframes anim2_5_4 {
     0% {transform: translate(-50%, -50%); background: transparent;}
     100% {transform: translate(-50%, -50%); background: transparent;} 
 }
-
 @keyframes anim2_5_5 {
     0% {transform: translate(-50%, -50%);} 
     100% {transform: translate(-50%, -50%);} 
@@ -581,36 +550,43 @@ div.animacja3 div:nth-child(1) {
     animation: anim3_1_1 2s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja3 div:nth-child(2) {
     transform: rotate(315deg) translate(50px) rotate(-315deg);
     animation: anim3_1_2 2s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja3 div:nth-child(3) {
     transform: rotate(0deg) translate(50px) rotate(0deg);
     animation: anim3_1_3 2s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja3 div:nth-child(4) {
     transform: rotate(45deg) translate(50px) rotate(-45deg);
     animation: anim3_1_4 2s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja3 div:nth-child(5) {
     transform: rotate(90deg) translate(50px) rotate(-90deg);
     animation: anim3_1_5 2s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja3 div:nth-child(6) {
     transform: rotate(135deg) translate(50px) rotate(-135deg);
     animation: anim3_1_6 2s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja3 div:nth-child(7) {
     transform: rotate(180deg) translate(50px) rotate(-180deg);
     animation: anim3_1_7 2s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja3 div:nth-child(8) {
     transform: rotate(225deg) translate(50px) rotate(-225deg);
     animation: anim3_1_8 2s infinite linear;
@@ -889,7 +865,7 @@ div.animacja3 div:nth-child(8) {
     transform: rotate(540deg) translate(50px) rotate(-225deg);}
     100% {background-color: white; border: 2px solid white;
     transform: rotate(585deg) translate(50px) rotate(-225deg);} 
-} 
+}
 /* ========= animacja 5 ========= */
 @keyframes anim3_5_1 {
     0% {background-color: white; border: 2px solid white;
@@ -955,6 +931,103 @@ div.animacja3 div:nth-child(8) {
     93.76% {background-color: white; border: 2px solid white;}
     100% {background-color: white; border: 2px solid white;} 
 }
+/* ========= animacja X ========= */
+@keyframes anim3_X_1 {
+    0% {background-color: transparent; border: 5px solid white;
+    transform: rotate(270deg) translate(50px) rotate(-270deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}
+    100% {background-color: transparent; border: 5px solid white;
+    transform: rotate(630deg) translate(50px) rotate(-270deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}  
+}
+@keyframes anim3_X_2 {
+    0% {background-color: transparent; border: 5px solid white;
+    transform: rotate(315deg) translate(50px) rotate(-315deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}
+    100% {background-color: transparent; border: 5px solid white;
+    transform: rotate(675deg) translate(50px) rotate(-315deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}  
+}
+@keyframes anim3_X_3 {
+    0% {background-color: transparent; border: 5px solid white;
+    transform: rotate(0deg) translate(50px) rotate(0deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;} 
+    100% {background-color: transparent; border: 5px solid white;
+    transform: rotate(360deg) translate(50px) rotate(0deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}  
+}
+@keyframes anim3_X_4 {
+    0% {background-color: transparent; border: 5px solid white;
+    transform: rotate(45deg) translate(50px) rotate(-225deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}
+    100% {background-color: transparent; border: 5px solid white;
+    transform: rotate(405deg) translate(50px) rotate(-225deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}  
+} 
+@keyframes anim3_X_5 {
+    0% {background-color: transparent; border: 5px solid white;
+    transform: rotate(90deg) translate(50px) rotate(-270deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}
+    100% {background-color: transparent; border: 5px solid white;
+    transform: rotate(450deg) translate(50px) rotate(-270deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}  
+}
+@keyframes anim3_X_6 {
+    0% {background-color: transparent; border: 5px solid white;
+    transform: rotate(135deg) translate(50px) rotate(-135deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}
+    100% {background-color: transparent; border: 5px solid white;
+    transform: rotate(495deg) translate(50px) rotate(-135deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}  
+} 
+@keyframes anim3_X_7 {
+    0% {background-color: transparent; border: 5px solid white;
+    transform: rotate(180deg) translate(50px) rotate(-270deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}
+    100% {background-color: transparent; border: 5px solid white;
+    transform: rotate(540deg) translate(50px) rotate(-270deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}  
+}
+@keyframes anim3_X_8 {
+    0% {background-color: transparent; border: 5px solid white;
+    transform: rotate(225deg) translate(50px) rotate(-225deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}
+    100% {background-color: transparent; border: 5px solid white;
+    transform: rotate(585deg) translate(50px) rotate(-225deg); 
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4),
+    0px 0px 4px 4px rgb(155, 0, 52),
+    0px 0px 3px 3px rgba(0, 0, 0, 0.4) inset;}  
+}
 
 /* =================== blok 4 ====================== */
 div.obiekty4 {
@@ -977,6 +1050,7 @@ div.animacja4 div:nth-child(1) {
     animation: anim4_1_1 2s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja4 div:nth-child(2) {
     width: 75px;
     height: 75px;
@@ -986,6 +1060,7 @@ div.animacja4 div:nth-child(2) {
     animation: anim4_1_2 4s infinite linear;
     animation-play-state: paused;
 }
+
 div.animacja4 div:nth-child(3) {
     width: 110px;
     height: 110px;
@@ -995,6 +1070,7 @@ div.animacja4 div:nth-child(3) {
     animation: anim4_1_3 4s infinite linear -1.33s;
     animation-play-state: paused;
 }
+
 div.animacja4 div:nth-child(4) {
     width: 150px;
     height: 150px;
@@ -1210,6 +1286,7 @@ div.obiekty5 div {
     inherits: false;
     initial-value: 0%;
 }
+
 div.animacja5 div.objectAnim5_1 {
     width: 82px;
     height: 82px;
@@ -1217,6 +1294,7 @@ div.animacja5 div.objectAnim5_1 {
     animation: anim5_1_0 3s infinite ease;
     animation-play-state: paused;
 }
+
 div.maskaObject5 div.objectAnim5_3 {
     width: 100px;
     height: 100px;
@@ -1225,6 +1303,7 @@ div.maskaObject5 div.objectAnim5_3 {
     animation: anim5_1_0 3s infinite ease;
     animation-play-state: paused;
 }
+
 div.maskaObject5 {
     width: 100px;
     height: 100px;
@@ -1372,34 +1451,42 @@ div.animacja6 div:nth-child(1) {
     animation: anim6_1_1 2s infinite 0.4s ease;
     animation-play-state: paused;
 }
+
 div.animacja6 div:nth-child(2) {
     animation: anim6_1_2 2s infinite 0.2s ease;
     animation-play-state: paused;
 }
+
 div.animacja6 div:nth-child(3) {
     animation: anim6_1_3 2s infinite 0s ease;
     animation-play-state: paused;
 }
+
 div.animacja6 div:nth-child(4) {
     animation: anim6_1_4 2s infinite 0.6s ease;
     animation-play-state: paused;
 }
+
 div.animacja6 div:nth-child(5) {
     animation: anim6_1_5 2s infinite 0.4s ease;
     animation-play-state: paused;
 }
+
 div.animacja6 div:nth-child(6) {
     animation: anim6_1_6 2s infinite 0.2s ease;
     animation-play-state: paused;
 }
+
 div.animacja6 div:nth-child(7) {
     animation: anim6_1_7 2s infinite 0.8s ease;
     animation-play-state: paused;
 }
+
 div.animacja6 div:nth-child(8) {
     animation: anim6_1_8 2s infinite 0.6s ease;
     animation-play-state: paused;
 }
+
 div.animacja6 div:nth-child(9) {
     animation: anim6_1_9 2s infinite 0.4s ease;
     animation-play-state: paused;
