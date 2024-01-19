@@ -27,8 +27,8 @@ header.addEventListener("click", check_letter);
 function check_letter() {
     let selection = getSelection();
     let charClicked = selection.focusOffset;
-    bloki[2].style.background = "radial-gradient(circle, rgb(173, 0, 81) 5%, rgb(176, 1, 60) 25%, black 90%";
     if (charClicked == "3") {
+        bloki[2].style.background = "radial-gradient(circle, rgb(173, 0, 81) 5%, rgb(176, 1, 60) 25%, black 90%";
         for (var i = 0, max = obiekty3.length; i < max; i++) {
             obiekty3[i].style.animationName = "anim" + 3 + "_"
             + "X_" + (i + 1);
@@ -458,7 +458,7 @@ function liczniki() {
         if (licznik5 == 1) {
             for (var i = 0, max = obiekty5.length; i < max; i++) {
                 obiekty5[i].style.animationDuration = "3s";
-                obiekty5[i].style.animationTimingFunction = "ease";
+                obiekty5[i].style.animationTimingFunction = "linear";
             }
         } else if (licznik5 == 2) {
             for (var i = 0, max = obiekty5.length; i < max; i++) {
@@ -468,10 +468,10 @@ function liczniki() {
             obiekty5[2].style.animationDuration = "1s";
         } else if (licznik5 == 3) {
             for (var i = 0, max = obiekty5.length; i < max; i++) {
-                obiekty5[i].style.animationTimingFunction = "linear";
+                obiekty5[i].style.animationDuration = "8s";
             }
-            obiekty5[0].style.animationDuration = "2.5s";
-            obiekty5[2].style.animationDuration = "8s";
+            obiekty5[0].style.animationTimingFunction = "ease";
+            obiekty5[2].style.animationTimingFunction = "linear";
         } else if (licznik5 == 4) {
             for (var i = 0, max = obiekty5.length; i < max; i++) {
                 obiekty5[i].style.animationTimingFunction = "linear";
