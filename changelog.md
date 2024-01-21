@@ -1,5 +1,8 @@
 # Changelog
 
+========= 1.03 ========
+- Another attempt to fix bug with Easter Egg.
+
 ========= 1.02 ========
 - Easter Egg was not working on iOS.
 

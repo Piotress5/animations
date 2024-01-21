@@ -25,9 +25,9 @@ let licznik6 = 1;
 
 header.addEventListener("click", check_letter);
 function check_letter() {
-    let selection = getSelection();
+    let selection = document.getSelection();
     let charClicked = selection.focusOffset;
-    if (charClicked == "3") {
+    if (charClicked == 3) {
         bloki[2].style.background = "radial-gradient(circle, rgb(173, 0, 81) 5%, rgb(176, 1, 60) 25%, black 90%";
         for (var i = 0, max = obiekty3.length; i < max; i++) {
             obiekty3[i].style.animationName = "anim" + 3 + "_"
