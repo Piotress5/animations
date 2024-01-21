@@ -23,12 +23,8 @@ let licznik4 = 1;
 let licznik5 = 1;
 let licznik6 = 1;
 
-header.addEventListener("click", check_letter);
-function check_letter() {
-    let selection = document.getSelection();
-    let charClicked = selection.focusOffset;
-    if (charClicked == 3) {
-        bloki[2].style.background = "radial-gradient(circle, rgb(173, 0, 81) 5%, rgb(176, 1, 60) 25%, black 90%";
+function zmien() {
+    bloki[2].style.background = "radial-gradient(circle, rgb(173, 0, 81) 5%, rgb(176, 1, 60) 25%, black 90%";
         for (var i = 0, max = obiekty3.length; i < max; i++) {
             obiekty3[i].style.animationName = "anim" + 3 + "_"
             + "X_" + (i + 1);
@@ -36,7 +32,20 @@ function check_letter() {
             obiekty3[i].style.animationDuration = "2s";
             obiekty3[i].style.animationDelay = "0s";
         }
+}
+header.addEventListener("click", check_letter);
+function check_letter() {
+    let selection = document.getSelection();
+    let charClicked = selection.focusOffset;
+    if (charClicked == 3) {
+        zmien();
     }
+}
+let text = navigator.userAgent;
+if (text.includes("Chrome") == false && text.includes("Safari") == true) {
+    header.innerHTML = '<span class="jeden">Ani</span><span class="dwa">m</span><span class="jeden">ations</span>';
+    let header2 = document.querySelector("span.dwa");
+    header2.addEventListener("click", zmien);
 }
 
 // dzialanie przyciskow

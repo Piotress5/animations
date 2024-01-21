@@ -1,5 +1,8 @@
 # Changelog
 
+========= 1.05 ========
+- Another attempt to fix bug with Easter Egg. #3
+
 ========= 1.04 ========
 - Another attempt to fix bug with Easter Egg. #2
 
