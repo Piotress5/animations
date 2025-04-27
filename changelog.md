@@ -1,15 +1,14 @@
 # Changelog
 
-========= 1.05 ========
-- Another attempt to fix bug with Easter Egg. #3
+========= 1.1 =========
+- Slightly modified animation blocks,
+- Added link to Homepage,
+- Added background flow,
+- Improved appearance of most block elements,
+- Added 6th animation to each block,
+- Added 7th and 8th blocks.
 
-========= 1.04 ========
-- Another attempt to fix bug with Easter Egg. #2
-
-========= 1.03 ========
-- Another attempt to fix bug with Easter Egg.
-
-========= 1.02 ========
+===== 1.02 - 1.05 =====
 - Easter Egg was not working on iOS.
 
 ========= 1.01 ========

@@ -26,7 +26,8 @@ My first idea of this project was to name it as I did, so I just sticked with th
 ## Features
 #### List of the ready features:
 - The application allows you to Play, Stop and go Previous/Next animation,
-- Page consists of 6 blocks with 5 animations per block,
+- Page consists of 8 blocks with 6 animations per block,
+- Each block is displaying current animation's number and total number of animations in the bottom right corner,
 - Application will adjust its size and blocks placement, depending on the user's screen resolution.
 
 #### Additional info:
