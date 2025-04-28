@@ -1,5 +1,8 @@
 # Changelog
 
+========= 1.11 ========
+- Adjusted position of header elements in mobile version.
+
 ========= 1.1 =========
 - Slightly modified animation blocks,
 - Added link to Homepage,
