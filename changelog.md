@@ -1,5 +1,8 @@
 # Changelog
 
+========= 1.12 ========
+- Added favicon
+
 ========= 1.11 ========
 - Adjusted position of header elements in mobile version.
 
